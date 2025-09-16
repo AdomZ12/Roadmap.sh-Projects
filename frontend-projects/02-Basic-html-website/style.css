@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    border:2px solid black;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-style: normal;}
+.AtmaFont{
+    font-family: "Atma", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+.site-header .logo{
+    display:flex;
+    gap: clamp(18px, 2vw, 20px); /* shrink gap too */
+    align-items:center;
+    flex-shrink: 1;
+    min-width:0;
+}
+.logo img{
+    width: clamp(25px, 6vw, 45px); /* shrinks smoothly */
+    height:auto;
+}
+.logo h1{
+    font-size:clamp(1.5rem,3.5vw,2.5rem);
+    white-space:nowrap;
+}
+.site-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding:20px;
+}
+.site-header nav ul{
+    display: flex;
+    gap:33px;
+    list-style-type: '/   ';    
+
+}
+.site-header nav a{
+    color:black;
+}
+
+.hero,.info, .info-left > ul > li {
+    border-bottom:2px solid black;
+}
+
+.hero{
+    text-align: center;  
+    padding:120px 20px;
+}
+.hero h2{
+    font-size:clamp(25px, 5vw, 3.5rem);
+}
+.hero p,.gray{
+    color:rgb(141, 124, 124);
+}
+.large{
+    font-size:clamp(20px,2vw,60px);
+    padding-bottom:15px;
+}
+.info{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.info-left,.info-middle{
+    border-right: 2px solid black;
+}
+.info-left> ul>li, .info-middle *,.info-right *{
+    padding:5px 20px;
+}
+.info-left ul li{
+    list-style-type: none;
+}
+.info-left>ul>li:last-child{
+    border:none;
+}
+.info>div{
+    flex:1;
+    padding:20px 0;
+}
+
+.info-right ul li{
+    list-style-position: inside;
+}
+.info-middle a{
+    color:rgb(24, 179, 231);
+}
+.reviews{
+    padding:80px 20px;
+    display: flex;
+    flex-direction:column;
+    gap:50px;
+}
+.reviews-box{
+    display: flex;
+    gap:20px;
+    justify-content: space-evenly;
+
+}
+.reviews-box .box{
+    border:2px solid black;
+    border-radius: 35px;
+    padding:20px;
+}
+footer{
+    padding:80px 20px;
+    text-align: center;
+    font-size:20px;
+}
+a:hover,.site-header nav a:hover{
+    color:blue;
+}
+@media (max-width:600px){
+    .site-header nav ul{
+        display:none;
+    }
+    .reviews-box{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:900px){
+    .info{
+        flex-direction: column;
+    }
+    .info-middle,.info-left{
+        border-right:none;
+        border-bottom:2px solid black;
+    }
+}
