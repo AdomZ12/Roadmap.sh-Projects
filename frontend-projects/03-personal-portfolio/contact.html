@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fill out contents-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+</head>
+<body>
+    <!--Navigation-->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Personal Portfolio - Black Block logo">
+            <p>Your Name</p>
+        </div>
+        <nav role="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact">
+        <div class="contact-header">
+            <div class="left">
+                <h2>Let's Chat More!</h2>
+                <p>Got any questions? Fill out the following form to learn more. I'll get back to you in the next 24 hours.</p>
+            </div>
+            <div class="right">
+                <img src="assets/logo.png" alt="Your Name Yellow Square logo">
+            </div>
+        </div>
+
+        <form action="">
+            <div class="form-group">
+                <span class="number">01</span>
+                <label for="name">What's your name?</label><br>
+                <input type="text" id="name" name="name" placeholder="Type your full name" required><br><br>
+            </div>
+            
+            <div class="form-group">
+                <span class="number">02</span>
+                <label for="email">What's your email adress?</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <span class="number">03</span>
+                <label for="phone">What's your phone number?</label>
+                <input type="tel" name="phone" id="phone" placeholder="+1 123 4567890">
+            </div>
+
+            <div class="form-group">
+                <span class="number">04</span>
+                <label for="organization">What's your company/organization name?</label>
+                <input type="text" name="organization" id="organization" placeholder="Type your company/organization name">
+            </div>
+
+            <div class="form-group">
+                <span class="number">05</span>
+                <label for="chat">What are you looking to discuss?</label>
+                <select name="chat" id="chat">
+                    <option value="collab">Collaboration</option>
+                    <option value="Opportunity">Opportunities</option>
+                    <option value="coffee-chat">Coffee Chat</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <span class="number">06</span>
+                <label for="More-info">Include any information and questions you may have bellow</label>
+                <textarea id="More-info" name="More-info" rows="5" placeholder="Please type any additional information"></textarea>
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; all rights reserved 2025</p>
+    </footer>
+</body>
+</html>
